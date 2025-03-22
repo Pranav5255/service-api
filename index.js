@@ -1,5 +1,7 @@
-import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
+console.log("MongoDB URL:", process.env.MONGO_URL);
+import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import storageRoutes from "./routes/stroageRoutes.js";
